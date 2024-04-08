@@ -1,0 +1,3 @@
+[submodule "Sovereign/vendor/spdlog"]
+	path = Sovereign/vendor/spdlog
+	url = https://github.com/gabime/spdlog

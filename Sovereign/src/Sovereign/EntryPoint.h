@@ -5,7 +5,12 @@
 extern Sovereign::Application* Sovereign::CreateApplication();
 
 int main(int argc, char **argv) {
-	printf("Sovereign is ready to conquer");
+
+	Sovereign::Log::Init();
+	SVG_CORE_WARN("Initialized log");
+	SVG_INFO("Hello");
+
+
 	auto app = Sovereign::CreateApplication();
 	app->Run();
 	delete app;
